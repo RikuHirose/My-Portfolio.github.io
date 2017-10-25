@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaushan Script', cursive;
+}
+ 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all .5s;
+
+}
+a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .5s;
+}
+p {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+li {
+	list-style: none;
+}
+
+h2 {
+   padding-top: 100px;
+   text-align: center;
+   font-size: 60px;
+   letter-spacing: 2px;
+   font-weight: 200px;
+}
+
+.section-logo {
+	text-align: center;
+	font-size: 60px;
+}
+.nav-title , .nav-title:hover , .nav-title:visited{
+	text-decoration: none;
+	color: #696969;
+}
+
+.contact-section-logo  {
+  text-align: center;
+}
+.nav-title03:before {
+  background-color: white;
+}
+.nav-title03 , .nav-title03:hover , .nav-title03:visited{
+   
+  text-decoration: none;
+  color: white;
+}
+
+/*ここまで共通CSS*/
+
+/*ここからheader*/
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  filter: opacity(80%);
+  color: white;
+}
+li{
+  float: left;
+}
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color:white;
+  transition: .3s;
+}
+
+.nav-content {
+  width: 450px;
+  height: 50px;
+  float: right;
+}
+
+
+.nav-link {
+  padding-right: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+  float: left;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+}
+.nav-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-animation{
+  background-color: rgba(127,127,127,0.6);
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+
+.nav-none {
+  display: none;
+}
+
+/*ここまでheader*/
+/*main-visual*/
+.main-visual-content {
+  height: 800px;
+  background-image: url("./img/pexels-photo-414630.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(75%);
+  color: white;
+  text-align: center;
+}
+
+.content01{
+  letter-spacing: 1px;
+  padding-bottom: 100px;
+  font-size: 20px; 
+  font-weight: bold;
+
+}
+.content02{
+  letter-spacing: 1px;
+  padding-bottom: 60px;
+  font-size: 20px; 
+  font-weight: 200px;
+}
+.main-visual-logo {
+  font-size: 100px;
+  letter-spacing: 2px;
+  padding-top: 250px;
+}
+
+.text-none{
+  text-decoration: none;
+}
+.fa{
+  display: block;
+}
+
+.fa-color {
+  color: #fff;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  padding: 20px 5px 15px 5px;
+  border-radius: 120px 120px 120px 120px;
+  text-decoration: none;
+}
+
+
+/*ここまでmain-visual*/
+
+/*ここからprofile*/
+
+.profile {
+  width: 100%;
+  height: 750px;
+  background-image: url(./img/background.jpg);
+}
+
+.about {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 100px;
+	
+}
+.about-left {
+  float: left;
+}
+
+.about-img {
+  border-radius: 170px 170px 170px 170px;
+}
+.about-right {
+  float: right;
+  width: 51%;
+  text-align: left;
+}
+
+.about-right p {
+  color: 	rgba(47, 79, 79, 0.9);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.about-right h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.about-right-text02 {
+  padding-top: 40px;	
+}
+/*こまでprofile*/
+
+/*ここからskills*/
+
+.skills {
+  width: 100%;
+  height: 750px;
+  background-image: url(./img/background02.jpg);
+
+}
+
+.skill-lists {
+  margin: 50px auto;
+  width: 60%;
+  padding-top: 60px;
+}
+.progressBar{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: #eeeeee;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #222;
+}
+.title{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.5;
+  z-index: 500;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 0 2px #333;
+  text-shadow: 1px 1px 1px #000;
+}
+.progress_value{
+  position: relative;
+  float: right;
+  padding-right: 10px;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #455a64;
+  z-index: 500;
+}
+.progress{
+  height: 30px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 0 2px #555;
+}
+.cage {
+  position: relative;
+  left: 100px;
+  height: 30px;
+  width: calc(100% - 100px);
+}
+.htmlColor, .cssColor, .jsColor, .rubyColor,.wordpressColor {
+  background: #585858;
+}
+
+.html ,.css , .js, .ruby , .wordpress{
+  background: #7abcff;
+  opacity: 0.6;
+}
+
+}
+@media (max-width: 720px) {
+  .main{
+     width: 90%;
+  }
+    /*??????????????*/
+}
+/*ここまでskills*/
+
+/*ここからfooter*/
+.contact {
+	width: 100%;
+	height: 850px;
+	background-image: url(./img/kid-notebook-computer-learns.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: opacity(75%);
+}
+
+
+.contact-text {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 150px;
+} 
+
+.contact-text p , .footer-text {
+	font-weight: 200;
+	color: white;
+}
+
+.contact-wrapper-btn p {
+  padding-bottom: 200PX;
+}
+.contact-btn {
+	color: white;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border:1px solid #000000;
+    border-radius: 120px 120px 120px 120px;
+    padding: 10px 25px;
+    border-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.contact-btn:hover {
+	text-decoration: none;
+	background-color: rgba(254,254,254,0.3);
+}
+
+.footer-text {
+    font-size: 4px;
+    text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+	/*共通css*/
+    h2 {
+        font-size: 45px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    header {
+        height: 800px;
+        
+    }
+    .nav {
+        display: none;
+    }
+    
+    .header-content {
+        padding-top: 300px;
+    }
+    .header-logo {
+      font-size: 65px;
+      line-height: auto;
+    }
+
+    .content02 {
+      padding-bottom: 50px;
+    }
+
+    .fa-3x {
+      font-size: 1em;
+    
+    }
+    .profile {
+        height: auto;
+    }
+    .about {
+        text-align: center;
+    }
+    .about-img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-left {
+        float: none;
+        padding-bottom: 40px;
+    }
+    .about-right {
+        width: auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .skills {
+        height: 700px;
+    }
+    .skill-lists {
+        width: 80%;
+    }
+    
+    .contact {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-section-logo {
+        text-align: center;
+    }
+    
+
+    .contact-text {
+        width: 75%;
+        padding: 50px 0;
+    }
+
+   
+
+    footer {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .footer-text p{
+        font-size: 1px;
+    }
+
+}
+
+@media screen and (max-width: 749px) {
+    .about {
+        text-align: center;
+    }
+    .about-left {
+      float: none;
+    }
+    .about-right {
+      float: none;
+      width: 85%;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .profile {
+      width: 100%;
+      height: auto;
+    }
+    .about-img {
+      width: 250px;
+      height: 250px;
+    }
+    .about-right-text02 {
+      padding-bottom: 50px;
+    }
+
+    .skills {
+      width: 100%;
+    }
+
+    .contact {
+      width: 100%;
+      height: auto;
+}
